@@ -4946,10 +4946,17 @@ ng-packagr@^17.3.0:
     rollup "^4.5.0"
 
 ngx-code-snippet@latest:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/ngx-code-snippet/-/ngx-code-snippet-0.0.3.tgz#f9932b525a63351c6c844721b0eddd8e2e5ffa4a"
-  integrity sha512-JH8AoCw/9poJwKt3I41Vrm8i71jTxMkHp9oQSpR8nUlERFvUbexCjcoAtLRrm+87NxRn/UYzEwxxWssB8CTAxg==
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/ngx-code-snippet/-/ngx-code-snippet-0.0.5.tgz#c2a13d16313c80ebe7f8c48f379507e561a6cca2"
+  integrity sha512-pZPnbPK5a2QYF9yOoBtd8TBwFVjYAymu/WcGOR4OyuV208neiRbYTIw6UAnxb/miqkIiUwIg8Q3crsMa2ECiEw==
   dependencies:
+    "@angular/animations" "^17.3.0"
+    "@angular/common" "^17.3.0"
+    "@angular/core" "^17.3.0"
+    angular-animations "^0.11.0"
+    eva-icons "^1.1.3"
+    ngx-highlightjs "^10.0.0"
+    rxjs "~7.8.0"
     tslib "^2.3.0"
 
 ngx-highlightjs@^10.0.0:
@@ -4959,6 +4966,13 @@ ngx-highlightjs@^10.0.0:
   dependencies:
     highlight.js "^11.8.0"
     tslib "^2.0.0"
+
+ngx-highlightjs@^11.0.0-beta.1:
+  version "11.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/ngx-highlightjs/-/ngx-highlightjs-11.0.0-beta.1.tgz#9ca3c8ee192503a061a5f90b2e412925e727f7e3"
+  integrity sha512-E12F48CXrHay9SvgEMcFNrtqb5xFbp/lSEtuwgd+YyreFI83wtPP8Hwzx3VDmf7E8b6XBPADbpd0QVHcgceYzg==
+  dependencies:
+    tslib "^2.3.0"
 
 nice-napi@^1.0.2:
   version "1.0.2"

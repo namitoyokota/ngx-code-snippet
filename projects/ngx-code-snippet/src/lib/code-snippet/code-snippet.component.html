@@ -1,5 +1,8 @@
-<!-- Code -->
-<pre><code class="code-container" [highlight]="code" [languages]="[language]"></code></pre>
+<!-- Snippet -->
+<pre *ngIf="auto && lineNumbers"><code class="code-container" [highlightAuto]="code" lineNumbers></code></pre>
+<pre *ngIf="auto && !lineNumbers"><code class="code-container" [highlightAuto]="code"></code></pre>
+<pre *ngIf="!auto && lineNumbers"><code class="code-container" [highlight]="code" [language]="language" lineNumbers></code></pre>
+<pre *ngIf="!auto && !lineNumbers"><code class="code-container" [highlight]="code" [language]="language"></code></pre>
 
 <!-- Copy to Clipboard -->
 <div class="clipboard-container">

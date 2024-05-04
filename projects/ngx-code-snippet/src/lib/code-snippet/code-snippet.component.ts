@@ -12,8 +12,21 @@ export class CodeSnippetComponent implements OnDestroy {
     /** Code snippet to display */
     @Input() code = '';
 
-    /** Format of the code */
-    @Input() language = '';
+    /** Show line numbers */
+    @Input() lineNumbers = false;
+
+    /** Manually set language of the code */
+    @Input('language')
+    set setLanguage(language: string) {
+        this.language = language;
+        this.auto = false;
+    }
+
+    /** Manually set language of the code */
+    language = '';
+
+    /** Indicates whether to use auto highlighting */
+    auto = true;
 
     /** Whether copy button has been pressed */
     copied = false;

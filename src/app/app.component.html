@@ -34,9 +34,9 @@
     <h2>Installation</h2>
     <div class="content-pane">
         <span>Install using a package manager:</span>
-        <code-snippet code="npm i ngx-code-snippet" language="node"></code-snippet>
+        <code-snippet code="npm i ngx-code-snippet" language="shell"></code-snippet>
         <span>or</span>
-        <code-snippet code="yarn add ngx-code-snippet" language="node"></code-snippet>
+        <code-snippet code="yarn add ngx-code-snippet" language="shell"></code-snippet>
     </div>
 </section>
 
@@ -45,7 +45,7 @@
     <h2>Usage</h2>
     <div class="content-pane">
         <span>First, import the module.</span>
-        <code-snippet [code]="snippets.module" language="typescript"></code-snippet>
+        <code-snippet [code]="snippets.module" [lineNumbers]="true"></code-snippet>
 
         <span>
             Next, set up a
@@ -53,10 +53,10 @@
             property. You can read all annotation types on
             <a href="https://roughnotation.com/" target="_blank">Rough Notation's official documentation</a>.
         </span>
-        <code-snippet [code]="snippets.config" language="typescript"></code-snippet>
+        <code-snippet [code]="snippets.config" [lineNumbers]="true"></code-snippet>
 
         <span>Lastly, add component in the HTML.</span>
-        <code-snippet [code]="snippets.html" language="xml"></code-snippet>
+        <code-snippet [code]="snippets.html" [lineNumbers]="true"></code-snippet>
     </div>
 </section>
 
