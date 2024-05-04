@@ -47,6 +47,6 @@ jobs:
 
             - name: Publish to NPM
               if: steps.check.outputs.changed == 'true'
-              run: yarn publish
+              run: npm publish ./dist/ngx-code-snippet
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
