@@ -4945,6 +4945,13 @@ ng-packagr@^17.3.0:
     esbuild "^0.20.0"
     rollup "^4.5.0"
 
+ngx-code-snippet@latest:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/ngx-code-snippet/-/ngx-code-snippet-0.0.3.tgz#f9932b525a63351c6c844721b0eddd8e2e5ffa4a"
+  integrity sha512-JH8AoCw/9poJwKt3I41Vrm8i71jTxMkHp9oQSpR8nUlERFvUbexCjcoAtLRrm+87NxRn/UYzEwxxWssB8CTAxg==
+  dependencies:
+    tslib "^2.3.0"
+
 ngx-highlightjs@^10.0.0:
   version "10.0.0"
   resolved "https://registry.yarnpkg.com/ngx-highlightjs/-/ngx-highlightjs-10.0.0.tgz#e28cdc652e6396c5d99e691354989b20fe72c1d7"

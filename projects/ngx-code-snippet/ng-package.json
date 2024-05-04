@@ -4,5 +4,6 @@
     "lib": {
         "entryFile": "src/public-api.ts"
     },
-    "assets": ["assets"]
+    "assets": ["assets"],
+    "allowedNonPeerDependencies": ["@angular/animations", "angular-animations", "eva-icons", "ngx-highlightjs", "rxjs"]
 }
