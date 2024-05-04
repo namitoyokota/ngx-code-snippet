@@ -27,7 +27,7 @@
                             "src/assets",
                             {
                                 "glob": "**/*",
-                                "input": "projects/ngx-notation-reveal/assets",
+                                "input": "projects/ngx-code-snippet/assets",
                                 "output": "/assets"
                             }
                         ],
@@ -93,7 +93,7 @@
                             "src/assets",
                             {
                                 "glob": "**/*",
-                                "input": "projects/ngx-notation-reveal/assets",
+                                "input": "projects/ngx-code-snippet/assets",
                                 "output": "/assets"
                             }
                         ],
@@ -107,23 +107,23 @@
                 }
             }
         },
-        "ngx-notation-reveal": {
+        "ngx-code-snippet": {
             "projectType": "library",
-            "root": "projects/ngx-notation-reveal",
-            "sourceRoot": "projects/ngx-notation-reveal/src",
+            "root": "projects/ngx-code-snippet",
+            "sourceRoot": "projects/ngx-code-snippet/src",
             "prefix": "lib",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
-                        "project": "projects/ngx-notation-reveal/ng-package.json"
+                        "project": "projects/ngx-code-snippet/ng-package.json"
                     },
                     "configurations": {
                         "production": {
-                            "tsConfig": "projects/ngx-notation-reveal/tsconfig.lib.prod.json"
+                            "tsConfig": "projects/ngx-code-snippet/tsconfig.lib.prod.json"
                         },
                         "development": {
-                            "tsConfig": "projects/ngx-notation-reveal/tsconfig.lib.json"
+                            "tsConfig": "projects/ngx-code-snippet/tsconfig.lib.json"
                         }
                     },
                     "defaultConfiguration": "production"
@@ -131,7 +131,7 @@
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
-                        "tsConfig": "projects/ngx-notation-reveal/tsconfig.spec.json",
+                        "tsConfig": "projects/ngx-code-snippet/tsconfig.spec.json",
                         "polyfills": ["zone.js", "zone.js/testing"]
                     }
                 }
