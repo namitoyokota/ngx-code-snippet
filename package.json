@@ -8,6 +8,9 @@
         "watch": "ng build --watch --configuration development",
         "build:lib": "ng build ngx-code-snippet",
         "watch:lib": "ng build ngx-code-snippet --watch --configuration development",
+        "license": "cp ./LICENSE ./dist/ngx-code-snippet/LICENSE",
+        "readme": "cp ./README.md ./dist/ngx-code-snippet/README.md",
+        "publish": "npm publish ./dist/ngx-code-snippet",
         "test": "ng test"
     },
     "private": true,
