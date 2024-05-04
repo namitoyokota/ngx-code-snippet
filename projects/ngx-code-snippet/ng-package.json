@@ -5,5 +5,13 @@
         "entryFile": "src/public-api.ts"
     },
     "assets": ["assets"],
-    "allowedNonPeerDependencies": ["@angular/animations", "angular-animations", "eva-icons", "ngx-highlightjs", "rxjs"]
+    "allowedNonPeerDependencies": [
+        "@angular/animations",
+        "@angular/common",
+        "@angular/core",
+        "angular-animations",
+        "eva-icons",
+        "ngx-highlightjs",
+        "rxjs"
+    ]
 }
