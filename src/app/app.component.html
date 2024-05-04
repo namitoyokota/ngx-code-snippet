@@ -1,0 +1,83 @@
+<!-- Header -->
+<div class="header">
+    <a class="reference" href="https://github.com/namitoyokota/ngx-code-snippet" target="_blank">
+        <span>GitHub</span>
+        <i class="eva eva-diagonal-arrow-right-up"></i>
+    </a>
+
+    <a class="reference" href="https://www.npmjs.com/package/ngx-code-snippet" target="_blank">
+        <span>NPM</span>
+        <i class="eva eva-diagonal-arrow-right-up"></i>
+    </a>
+</div>
+
+<!-- Logo -->
+<div class="logo">
+    <img alt="Logo" src="assets/logo.png" />
+</div>
+
+<!-- Title -->
+<div class="title">
+    <h1>Code Snippet</h1>
+    <p>Syntax highlighting for Angular</p>
+</div>
+
+<hr />
+
+<span>
+    <a href="https://www.npmjs.com/package/ngx-code-snippet" target="_blank">Code Snippet</a> is an Angular component to display code
+    snippets with <a href="https://highlightjs.org/" target="_blank">syntax highlighting</a>.
+</span>
+
+<!-- Installation -->
+<section>
+    <h2>Installation</h2>
+    <div class="content-pane">
+        <span>Install using a package manager:</span>
+        <code-snippet code="npm i ngx-code-snippet" language="node"></code-snippet>
+        <span>or</span>
+        <code-snippet code="yarn add ngx-code-snippet" language="node"></code-snippet>
+    </div>
+</section>
+
+<!-- Usage -->
+<section>
+    <h2>Usage</h2>
+    <div class="content-pane">
+        <span>First, import the module.</span>
+        <code-snippet [code]="snippets.module" language="typescript"></code-snippet>
+
+        <span>
+            Next, set up a
+            <a href="https://github.com/rough-stuff/rough-notation/blob/master/src/model.ts#L17" target="_blank">config</a>
+            property. You can read all annotation types on
+            <a href="https://roughnotation.com/" target="_blank">Rough Notation's official documentation</a>.
+        </span>
+        <code-snippet [code]="snippets.config" language="typescript"></code-snippet>
+
+        <span>Lastly, add component in the HTML.</span>
+        <code-snippet [code]="snippets.html" language="xml"></code-snippet>
+    </div>
+</section>
+
+<!-- Directives -->
+<section>
+    <h2>Directives</h2>
+    <div class="content-pane">
+        <span>Optionally, override the <b>reset</b> flag to avoid re-animations.</span>
+        <code-snippet [code]="snippets.reset" language="xml"></code-snippet>
+
+        <span><b>Delay</b>, set to 1000 milliseconds (1 second) by default, can also be overridden.</span>
+        <code-snippet [code]="snippets.delay" language="xml"></code-snippet>
+    </div>
+</section>
+
+<!-- TODO: Demo -->
+
+<hr />
+
+<!-- License -->
+<p>
+    <a href="https://github.com/namitoyokota/ngx-code-snippet/blob/master/LICENSE" target="_blank">MIT</a> &copy;
+    <a href="https://www.namitoyokota.com" target="_blank">Namito Yokota</a>
+</p>
