@@ -1,13 +1,15 @@
 <!-- Snippet -->
-<pre *ngIf="auto && lineNumbers"><code class="code-container" [highlightAuto]="code" lineNumbers></code></pre>
-<pre *ngIf="auto && !lineNumbers"><code class="code-container" [highlightAuto]="code"></code></pre>
-<pre *ngIf="!auto && lineNumbers"><code class="code-container" [highlight]="code" [language]="language" lineNumbers></code></pre>
-<pre *ngIf="!auto && !lineNumbers"><code class="code-container" [highlight]="code" [language]="language"></code></pre>
+<pre *ngIf="autoHighlight && showLineNumbers"><code class="code-container" [highlightAuto]="code" lineNumbers></code></pre>
+<pre *ngIf="autoHighlight && !showLineNumbers"><code class="code-container" [highlightAuto]="code"></code></pre>
+<pre
+    *ngIf="!autoHighlight && showLineNumbers"
+><code class="code-container" [highlight]="code" [language]="language" lineNumbers></code></pre>
+<pre *ngIf="!autoHighlight && !showLineNumbers"><code class="code-container" [highlight]="code" [language]="language"></code></pre>
 
 <!-- Copy to Clipboard -->
-<div class="clipboard-container">
-    <span *ngIf="copied" class="copied-text" [@fadeInOnEnter] [@fadeOutOnLeave]>Copied!</span>
+<div *ngIf="showCopy" class="clipboard-container">
+    <span *ngIf="copiedToClipboard" class="copied-text" [@fadeInOnEnter] [@fadeOutOnLeave]>Copied!</span>
     <button class="copy-button" title="Copy to clipboard." (click)="copyToClipboard()">
-        <i class="eva" [class]="copied ? 'eva-checkmark-outline' : 'eva-copy-outline'"></i>
+        <i class="eva" [class]="copiedToClipboard ? 'eva-checkmark-outline' : 'eva-copy-outline'"></i>
     </button>
 </div>

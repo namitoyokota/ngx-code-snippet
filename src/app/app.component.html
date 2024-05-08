@@ -45,7 +45,7 @@
     <h2>Usage</h2>
     <div class="content-pane">
         <span>First, import the module.</span>
-        <code-snippet [code]="snippets.module" [lineNumbers]="true"></code-snippet>
+        <code-snippet [code]="snippets.module" [showLineNumbers]="true"></code-snippet>
 
         <span>
             Next, set up a
@@ -53,10 +53,10 @@
             property. You can read all annotation types on
             <a href="https://roughnotation.com/" target="_blank">Rough Notation's official documentation</a>.
         </span>
-        <code-snippet [code]="snippets.config" [lineNumbers]="true"></code-snippet>
+        <code-snippet [code]="snippets.config" [showLineNumbers]="true"></code-snippet>
 
         <span>Lastly, add component in the HTML.</span>
-        <code-snippet [code]="snippets.html" [lineNumbers]="true"></code-snippet>
+        <code-snippet [code]="snippets.html" [showLineNumbers]="true"></code-snippet>
     </div>
 </section>
 
@@ -65,10 +65,10 @@
     <h2>Directives</h2>
     <div class="content-pane">
         <span>Optionally, override the <b>reset</b> flag to avoid re-animations.</span>
-        <code-snippet [code]="snippets.reset" language="xml"></code-snippet>
+        <code-snippet [code]="snippets.reset" language="xml" [showCopy]="false"></code-snippet>
 
         <span><b>Delay</b>, set to 1000 milliseconds (1 second) by default, can also be overridden.</span>
-        <code-snippet [code]="snippets.delay" language="xml"></code-snippet>
+        <code-snippet [code]="snippets.delay" language="xml" [showCopy]="false"></code-snippet>
     </div>
 </section>
 

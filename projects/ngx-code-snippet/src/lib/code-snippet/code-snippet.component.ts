@@ -12,24 +12,27 @@ export class CodeSnippetComponent implements OnDestroy {
     /** Code snippet to display */
     @Input() code = '';
 
+    /** Indicates when copy button should be shown */
+    @Input() showCopy = true;
+
     /** Show line numbers */
-    @Input() lineNumbers = false;
+    @Input() showLineNumbers = false;
 
     /** Manually set language of the code */
     @Input('language')
     set setLanguage(language: string) {
         this.language = language;
-        this.auto = false;
+        this.autoHighlight = false;
     }
 
     /** Manually set language of the code */
     language = '';
 
     /** Indicates whether to use auto highlighting */
-    auto = true;
+    autoHighlight = true;
 
     /** Whether copy button has been pressed */
-    copied = false;
+    copiedToClipboard = false;
 
     /** Handles memory leaks for copied text scheduler */
     private copyTextSub: Subscription;
@@ -51,7 +54,7 @@ export class CodeSnippetComponent implements OnDestroy {
      */
     copyToClipboard(): void {
         navigator.clipboard.writeText(this.code);
-        this.copied = true;
-        this.copyTextSub = asyncScheduler.schedule(() => (this.copied = false), this.copiedTextLength);
+        this.copiedToClipboard = true;
+        this.copyTextSub = asyncScheduler.schedule(() => (this.copiedToClipboard = false), this.copiedTextLength);
     }
 }
