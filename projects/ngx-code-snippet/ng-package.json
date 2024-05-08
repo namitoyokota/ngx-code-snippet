@@ -11,6 +11,7 @@
         "@angular/core",
         "angular-animations",
         "eva-icons",
+        "highlight.js",
         "ngx-highlightjs",
         "rxjs"
     ]
