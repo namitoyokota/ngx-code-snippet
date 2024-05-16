@@ -8,12 +8,6 @@
     border-radius: 8px;
 }
 
-::ng-deep tr {
-    display: grid;
-    grid-template-columns: min-content auto;
-    column-gap: 10px;
-}
-
 ::ng-deep .hljs-ln-numbers {
     opacity: 0.5;
 }
