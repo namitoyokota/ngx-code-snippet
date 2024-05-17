@@ -1,6 +1,6 @@
 {
     "name": "ngx-code-snippet",
-    "version": "17.0.2",
+    "version": "17.0.3",
     "description": "Angular component to display code snippets with syntax highlighting.",
     "author": {
         "name": "Namito Yokota",

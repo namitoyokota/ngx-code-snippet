@@ -1,15 +1,21 @@
 :host {
     position: relative;
     width: 100%;
+
+    ::ng-deep .hljs-ln-numbers {
+        opacity: 0.5;
+    }
+
+    ::ng-deep .hljs-ln tr {
+        display: grid;
+        grid-template-columns: min-content auto;
+        column-gap: 10px;
+    }
 }
 
 .code-container {
     min-height: 48px;
     border-radius: 8px;
-}
-
-::ng-deep .hljs-ln-numbers {
-    opacity: 0.5;
 }
 
 .clipboard-container {
