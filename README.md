@@ -30,6 +30,17 @@ or
 yarn add ngx-code-snippet
 ```
 
+### API
+
+This readonly component takes in the following properties as inputs:
+
+| Name              | Type    | Default | Description                                                                                              |
+| ----------------- | ------- | ------- | -------------------------------------------------------------------------------------------------------- |
+| `code`            | string  | ""      | Code to display.                                                                                         |
+| `language`        | string  | ""      | Language of the code snippet. Automatic language detection is supported when this field is not provided. |
+| `showCopy`        | boolean | true    | Show/hide copy button.                                                                                   |
+| `showLineNumbers` | boolean | false   | Show/hide line numbers.                                                                                  |
+
 ## License
 
 [MIT](https://github.com/namitoyokota/ngx-code-snippet/blob/master/LICENSE) &copy; [Namito Yokota](https://www.namitoyokota.com)
