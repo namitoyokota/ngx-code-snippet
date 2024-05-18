@@ -10,20 +10,6 @@ export class CodeSnippets {
 })
 export class AppModule {}`;
 
-    /** Code snippet to set component config input */
-    static config = `readonly underline = {
-    type: 'underline',
-    color: '#F38181',
-} as RoughAnnotationConfig;`;
-
     /** Code snippet to use notation reveal component */
-    static html = `<code-snippet [config]="underline">
-    This sentence will be underlined.
-</code-snippet>`;
-
-    /** Code snippet to use reset flag */
-    static reset = `<code-snippet [reset]="false"></code-snippet>`;
-
-    /** Code snippet to override delay */
-    static delay = `<code-snippet [delay]="5000"></code-snippet>`;
+    static html = `<code-snippet code="<div></div>"></code-snippet>`;
 }
