@@ -52,4 +52,25 @@
         column-gap: 20px;
         row-gap: 20px;
     }
+
+    .api-table {
+        border-collapse: collapse;
+
+        th,
+        td {
+            text-align: left;
+            border-bottom: 1px solid #e1e1e1;
+            padding: 10px;
+        }
+
+        .name {
+            background-color: #eaeaea;
+            border-radius: 5px;
+            padding: 2px 5px;
+        }
+
+        .type {
+            color: #3b82f6;
+        }
+    }
 }
