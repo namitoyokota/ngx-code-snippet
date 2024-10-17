@@ -37,7 +37,7 @@ jobs:
               with:
                   name: deploy_dist
             - name: Deploy to GitHub Pages
-              uses: JamesIves/github-pages-deploy-action@releases/v3
+              uses: JamesIves/github-pages-deploy-action@releases/v4
               with:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
                   BRANCH: gh-pages
